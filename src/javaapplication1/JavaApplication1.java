@@ -17,16 +17,20 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
 
-    int [] vector = {7,1,3,1,5,6,8,9,100,7,7,-4};
+  //Integer [] vector = {7,1,3,1,5,6,8,9,100,7,7,-4};
  
+    String [] vector = {"Ana","Juan","Pedro", "Lucia", "Ana","Juan","Pedro","Ana","Juan","Pedro"};
+    
     Histogram mihisto = new Histogram(vector);
 
-HashMap <Integer,Integer> histogram = mihisto.getHisto();
+   
+    
+HashMap <String,Integer> histogram = mihisto.getHisto();
     
 
         
         
-        for (Integer key : histogram.keySet()) {
+        for (String key : histogram.keySet()) {
             System.out.println(key + "-->"+ histogram.get(key));
         }
     
